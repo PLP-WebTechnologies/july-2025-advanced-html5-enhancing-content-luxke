@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix's Portfolio Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>Hello! I'm Felix, a passionate software engineer specializing in frontend development.</p>
+  </header>
+
+  <section>
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML5 & CSS</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Weekly Availability</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Available Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM – 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>10:00 AM – 2:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>1:00 PM – 5:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>My Work Showcase</h2>
+    <img src="image.jpg" alt="My bead artwork" width="300" />
+    <br><br>
+    <video width="320" controls>
+      <source src="Football.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <br><br>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required minlength="3"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone (Kenyan format):</label><br>
+        <input type="tel" id="phone" name="phone" pattern="^(\+254|0)?7\d{8}$" placeholder="0740723526" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Inquiry</legend>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required minlength="10"></textarea><br><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" required>
+          <option value="">--Select--</option>
+          <option value="general">General Inquiry</option>
+          <option value="project">Project Request</option>
+          <option value="feedback">Feedback</option>
+        </select><br><br>
+
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="contact-email" name="contact_method" value="email" required>
+        <label for="contact-email">Email</label>
+        <input type="radio" id="contact-phone" name="contact_method" value="phone">
+        <label for="contact-phone">Phone</label><br><br>
+      </fieldset>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Felix Kipkemboi | All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
